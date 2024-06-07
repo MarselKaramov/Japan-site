@@ -1,0 +1,713 @@
+html {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.wrapper-lg {
+    max-width: 1262px;
+    margin: 0 auto;
+}
+
+.sectionTitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.sectionTitle::after {
+    display: block;
+    content: '';
+    width: 253px;
+    height: 3px;
+    background-color: #006DFE;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .2s linear;
+    padding-bottom: 20px;
+    z-index: 999;
+}
+
+.header_active {
+    background: #0e1d2894;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #102746;
+    margin: 0 auto;
+}
+
+.headWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 56px;
+}
+
+.headerList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.headerItem {
+    margin-right: 82px;
+}
+
+.headerItem:last-child {
+    margin-right: 0;
+}
+
+.headerLi {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.headerLi:hover,
+.headerLi:active {
+    opacity: .75;
+}
+
+.intro {
+    min-height: 100vh;
+    background: url(../images/Hero.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 263px;
+}
+
+.introTitle {
+    font-size: 50px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    line-height: 60px;
+    font-style: normal;
+    margin-bottom: 22px;
+}
+
+.introSubTitle {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    margin-bottom: 59px;
+    max-width: 546px;
+}
+
+.searchForm {
+    border: 0;
+    padding: 0;
+}
+
+.searchFormInfo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inputText {
+    width: 297px;
+    background-color: transparent;
+    background: url(../images/Oval.svg) no-repeat left 6px;
+    background-size: 20px;
+    border: 0;
+    border-bottom: 2px solid #BFC0C5;
+    margin-right: 60px;
+    padding-left: 43px;
+    padding-bottom: 22px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Lato', sans-serif;
+    color: white
+}
+
+.inputText::placeholder {
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Lato', sans-serif;
+}
+
+.searchButton {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #1B7DFF;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    border-radius: 2px;
+    font-size: 24px;
+    border: 0;
+}
+
+.searchButton:hover,
+.searchButton:focus {
+    background: #1765cd
+}
+
+.benefitsWrap {
+    max-width: 1262px;
+    max-height: 655px;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+    position: relative;
+}
+
+.benefitsCards {
+    display: flex;
+    justify-content: center;
+}
+
+.benefitsTitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    font-family: 'Lato', sans-serif;
+    padding-top: 93px;
+    padding-left: 100px;
+    padding-bottom: 88px;
+    padding-right: 893px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    background-color: white;
+}
+
+.Cards {
+    height: 317px;
+    width: 288px;
+    padding: 55px;
+}
+
+.text1__Card1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Lato', sans-serif;
+}
+
+.text2__Card1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Lato', sans-serif;
+}
+
+.text3__Card1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #006DFE;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+}
+
+.text1__Card2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Lato', sans-serif;
+}
+
+.text2__Card2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Lato', sans-serif;
+}
+
+.text3__Card2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Lato', sans-serif;
+    color: #0057c9;
+    text-decoration: none;
+}
+
+.text1__Card3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Lato', sans-serif;
+}
+
+.text2__Card3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    line-height: 24px;
+}
+
+.text3__Card3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Lato', sans-serif;
+    color: #006DFE;
+    text-decoration: none;
+}
+
+.shape {
+    padding-left: 26px;
+    padding-bottom: 3px;
+}
+
+.text3__Card1:hover,
+.text3__Card2:hover,
+.text3__Card3:hover {
+    color: #0c4997
+}
+
+.placesCaption {
+    margin-bottom: 36px;
+    margin-top: 131px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.placesViewAll {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #006DFE;
+    text-decoration: none;
+    padding-right: 26px;
+}
+
+.placesViewAll:hover,
+.placesViewAll:focus {
+    color: #0c4997
+}
+
+.containerViewShape {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.placesCards1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 8px;
+}
+
+.places__card {
+    margin: 0 auto;
+    position: relative;
+}
+
+.places__card::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 24, 36, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.placesCardImg1 {
+    width: 619px;
+    height: 354px;
+}
+
+.placesCardImg2 {
+    width: 635px;
+    height: 354px;
+}
+
+.placesCardTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: white;
+    position: absolute;
+    bottom: 27px;
+    left: 29px;
+    z-index: 3;
+}
+
+.placesCards2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.places__card2 {
+    margin: 0 auto;
+    position: relative;
+}
+
+.placesCardImg3 {
+    width: 415px;
+    height: 283px;
+}
+
+.places__card2::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 24, 36, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.tottoriFocus {
+    margin-top: 131px;
+}
+
+.Tot__img {
+    width: 597px;
+    height: 354px;
+}
+
+.tottori__Title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    color: #102746;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 85px;
+    font-weight: 700;
+}
+
+.tottori__subTitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #102746;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 58px;
+}
+
+.viewPref {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #006DFE;
+    text-decoration: none;
+    margin-right: 26px;
+}
+
+.viewPref:hover,
+.viewPref:focus {
+    color: #0c4997
+}
+
+.tottoriFocus {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.viewPrefShape {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tottori__text {
+    margin-left: 108px;
+}
+
+.arashiyama__Title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    color: #102746;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 85px;
+    font-weight: 700;
+}
+
+.arashiyama__subTitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #102746;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 58px;
+}
+
+.arashiyama {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 107px;
+}
+
+.topPlacesCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 57px;
+    margin-bottom: 45px;
+}
+
+.top__places {
+    margin-bottom: 58px;
+}
+
+.topPlacesCard {
+    position: relative;
+}
+
+.top__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(21, 24, 36, 0.6);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.topCardTitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin-left: 25px;
+    margin-right: 157px;
+}
+
+.likes {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+}
+
+.comments {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+.likeLogo {
+    width: 16px;
+    height: 15px;
+    margin-left: 4px;
+    margin-right: 14px;
+}
+
+.commentLogo {
+    margin-left: 9px;
+}
+
+.topCardText {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #102746;
+}
+
+.texts__topcard {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.see__more__btn {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.seeMoreBtn_1 {
+    padding-top: 12px;
+    padding-bottom: 11px;
+    padding-left: 19px;
+    padding-right: 19px;
+    background: #1B7DFF;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    border-radius: 2px;
+    font-size: 16px;
+    border: 0;
+    margin-right: 328px;
+}
+
+.seeMoreBtn_1:hover,
+.seeMoreBtn_1:focus {
+    background: #1765cd
+}
+
+.seeMoreBtn_2 {
+    padding-top: 12px;
+    padding-bottom: 11px;
+    padding-left: 19px;
+    padding-right: 19px;
+    background: #1B7DFF;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    border-radius: 2px;
+    font-size: 16px;
+    border: 0;
+    margin-right: 330px;
+}
+
+.seeMoreBtn_2:hover,
+.seeMoreBtn_2:focus {
+    background: #1765cd
+}
+
+.seeMoreBtn_3 {
+    padding-top: 12px;
+    padding-bottom: 11px;
+    padding-left: 19px;
+    padding-right: 19px;
+    background: #1B7DFF;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    border-radius: 2px;
+    font-size: 16px;
+    border: 0;
+}
+
+.seeMoreBtn_3:hover,
+.seeMoreBtn_3:focus {
+    background: #1765cd
+}
+
+.top__container_2 {
+    margin-bottom: 144px;
+}
+
+.video__container {
+    width: 100%;
+}
+
+.videosWrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.video__items {
+    padding-top: 56.25%;
+}
+
+.video_element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.footer {
+    background: #0E1D28;
+    padding: 119px 0;
+}
+
+.footer__menu {
+    list-style: none;
+}
+
+.footer__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer__menu__item {
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.footer__text {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__nav {
+    display: flex;
+}
+
+.footer__logo {
+    margin-right: 50px;
+}
+
+.footer__menu {
+    margin-right: 140px;
+}
+
+.footer__text:hover {
+    color: rgb(128, 128, 128)
+}
